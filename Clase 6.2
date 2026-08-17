@@ -1,0 +1,24 @@
+monto_compra = 750.0
+peso_kg = 7.5
+destino = "Internacional"
+
+if monto_compra >= 1000:
+    precio = 0
+    print("Envío gratis")
+elif destino == "Nacional":
+    if peso_kg <= 5:
+        precio = 100
+    else:
+        precio = 150
+elif destino == "Internacional":
+    if peso_kg <= 5:
+        precio = 300
+    else:
+        precio = 500
+else:
+    precio = None
+    print ("No llegamos a esta zona :(")
+    
+if precio is not None:
+    total = monto_compra + precio
+    print(f"Total: ${total}")

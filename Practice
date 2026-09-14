@@ -1,0 +1,15 @@
+viajes = [
+{"destino": "Japon", "actividades": ["Visitar el Monte Fuji", "Probar el ramen local"], "costo": 2500
+{"destino": "Italia", "actividades": ["Ver el Coliseo", "Pasear en góndola"], "costo": 1800}
+
+nueva_actividad = input("Ingresa una nueva actividad para el primer viaje: ")
+nuevo_costo = int(input("Ingresa el nuevo costo para el segundo viaje: "))
+
+actividades_actualizadas = [
+viajes[0]["actividades"][0],viajes[0]["actividades"][1], nueva_actividad
+
+viajes[0]["actividades"] = actividades_actualizadas
+viajes [1]["costo"] = nuevo_costo
+
+print("\nRegistro de viajes actualizado:")
+print(viajes)|
